@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/wenhu/mlir-learning/mlir-toy/ch01/build",
+  "command": "/usr/bin/c++ -D_DEBUG -D_GLIBCXX_ASSERTIONS -D_LIBCPP_ENABLE_HARDENED_MODE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/wenhu/llvm-project/llvm/include -I/home/wenhu/llvm-project/build/include -I/home/wenhu/llvm-project/mlir/include -I/home/wenhu/llvm-project/build/tools/mlir/include -I/home/wenhu/mlir-learning/mlir-toy/ch01/include -I/home/wenhu/mlir-learning/mlir-toy/ch01/parser  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -ffunction-sections -fdata-sections   -fno-rtti -UNDEBUG -std=gnu++17 -o CMakeFiles/mlir-toy.dir/toyc.cpp.o -c /home/wenhu/mlir-learning/mlir-toy/ch01/toyc.cpp",
+  "file": "/home/wenhu/mlir-learning/mlir-toy/ch01/toyc.cpp"
+},
+{
+  "directory": "/home/wenhu/mlir-learning/mlir-toy/ch01/build",
+  "command": "/usr/bin/c++ -D_DEBUG -D_GLIBCXX_ASSERTIONS -D_LIBCPP_ENABLE_HARDENED_MODE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/wenhu/llvm-project/llvm/include -I/home/wenhu/llvm-project/build/include -I/home/wenhu/llvm-project/mlir/include -I/home/wenhu/llvm-project/build/tools/mlir/include -I/home/wenhu/mlir-learning/mlir-toy/ch01/include -I/home/wenhu/mlir-learning/mlir-toy/ch01/parser  -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -ffunction-sections -fdata-sections   -fno-rtti -UNDEBUG -std=gnu++17 -o CMakeFiles/mlir-toy.dir/parser/AST.cpp.o -c /home/wenhu/mlir-learning/mlir-toy/ch01/parser/AST.cpp",
+  "file": "/home/wenhu/mlir-learning/mlir-toy/ch01/parser/AST.cpp"
+}
+]
