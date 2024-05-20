@@ -1,2 +1,2 @@
-1.851416e-02 test.mlir
-4.085422e-02 ctlz_runner.mlir
+1.795101e-02 test.mlir
+3.028607e-02 ctlz_runner.mlir
