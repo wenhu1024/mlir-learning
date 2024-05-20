@@ -93,7 +93,11 @@ tutorial__opt_EXTERNAL_OBJECTS =
 tools/tutorial-opt: tools/CMakeFiles/tutorial-opt.dir/tutorial-opt.cpp.o
 tools/tutorial-opt: tools/CMakeFiles/tutorial-opt.dir/build.make
 tools/tutorial-opt: lib/Transform/Affine/libAffineFullUnroll.a
+tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRAffineDialect.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRAffineUtils.a
+tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRFuncDialect.a
+tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRPass.a
+tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRTransforms.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRAffineAnalysis.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRSCFDialect.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRBufferizationDialect.a
@@ -138,7 +142,6 @@ tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libLLVMTextAPI.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libLLVMBinaryFormat.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libLLVMTargetParser.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRFuncDialect.a
-tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRTransforms.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRTransformUtils.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRRewrite.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRPDLToPDLInterp.a
@@ -163,6 +166,7 @@ tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRIR.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libMLIRSupport.a
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libLLVMSupport.a
 tools/tutorial-opt: /usr/lib/x86_64-linux-gnu/libz.so
+tools/tutorial-opt: /usr/lib/x86_64-linux-gnu/libzstd.so
 tools/tutorial-opt: /usr/lib/x86_64-linux-gnu/libtinfo.so
 tools/tutorial-opt: /home/wenhu/llvm-project/build/lib/libLLVMDemangle.a
 tools/tutorial-opt: tools/CMakeFiles/tutorial-opt.dir/link.txt
