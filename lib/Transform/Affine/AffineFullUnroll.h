@@ -3,7 +3,7 @@
 
 #include "mlir/Dialect/Affine/IR/AffineOps.h"
 #include "mlir/Dialect/Func/IR/FuncOps.h"
-#include "mlir/include/mlir/Pass/Pass.h"
+#include "mlir/Pass/Pass.h"
 
 namespace mlir {
 namespace tutorial {

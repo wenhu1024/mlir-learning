@@ -1,12 +1,12 @@
 [
 {
-  "directory": "/home/wenhu/mlir-tutorial/mlir-toy/ch01/build",
-  "command": "/usr/bin/c++ -D_DEBUG -D_GLIBCXX_ASSERTIONS -D_LIBCPP_ENABLE_HARDENED_MODE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS   -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections   -fno-rtti -UNDEBUG -std=gnu++17 -o CMakeFiles/toyc.dir/toyc.cpp.o -c /home/wenhu/mlir-tutorial/mlir-toy/ch01/toyc.cpp",
-  "file": "/home/wenhu/mlir-tutorial/mlir-toy/ch01/toyc.cpp"
+  "directory": "/home/wenhu/mlir-learning/build/lib/Transform/Affine",
+  "command": "/usr/bin/c++  -I/home/wenhu/mlir-tutorial/install/include -I/home/wenhu/mlir-learning -std=gnu++17 -o CMakeFiles/AffineFullUnroll.dir/AffineFullUnroll.cpp.o -c /home/wenhu/mlir-learning/lib/Transform/Affine/AffineFullUnroll.cpp",
+  "file": "/home/wenhu/mlir-learning/lib/Transform/Affine/AffineFullUnroll.cpp"
 },
 {
-  "directory": "/home/wenhu/mlir-tutorial/mlir-toy/ch01/build",
-  "command": "/usr/bin/c++ -D_DEBUG -D_GLIBCXX_ASSERTIONS -D_LIBCPP_ENABLE_HARDENED_MODE -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -I/home/wenhu/mlir-tutorial/install/include  -I/home/wenhu/mlir-tutorial/llvm-project   -I/home/wenhu/mlir-learning -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -fno-lifetime-dse -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -Wimplicit-fallthrough -Wno-nonnull -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -ffunction-sections -fdata-sections   -fno-rtti -UNDEBUG -std=gnu++17 -o CMakeFiles/toyc.dir/parser/AST.cpp.o -c /home/wenhu/mlir-tutorial/mlir-toy/ch01/parser/AST.cpp",
-  "file": "/home/wenhu/mlir-tutorial/mlir-toy/ch01/parser/AST.cpp"
+  "directory": "/home/wenhu/mlir-learning/build/tools",
+  "command": "/usr/bin/c++  -I/home/wenhu/mlir-tutorial/install/include -I/home/wenhu/mlir-learning -std=gnu++17 -o CMakeFiles/tutorial-opt.dir/tutorial-opt.cpp.o -c /home/wenhu/mlir-learning/tools/tutorial-opt.cpp",
+  "file": "/home/wenhu/mlir-learning/tools/tutorial-opt.cpp"
 }
 ]
