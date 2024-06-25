@@ -8,6 +8,7 @@ target_link_libraries(
     tutorial-opt
     PRIVATE
     AffineFullUnroll
+    MulToAdd
     ${translation_libs}
     ${dialect_libs}
     ${conversion_libs} 
