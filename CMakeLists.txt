@@ -38,8 +38,7 @@ message("CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY  "${CMAKE_BINARY_DIR}/bin")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 
-add_subdirectory(lib/Transform/Affine)
-add_subdirectory(lib/Transform/Arith)
+add_subdirectory(lib)
 add_subdirectory(tools)
 
 
