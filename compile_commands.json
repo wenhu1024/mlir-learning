@@ -1,12 +1,22 @@
 [
 {
   "directory": "/home/wenhu/mlir-learning/build/lib/Transform/Affine",
-  "command": "/usr/bin/c++  -I/home/wenhu/mlir-tutorial/install/include -I/home/wenhu/mlir-learning -std=gnu++17 -o CMakeFiles/AffineFullUnroll.dir/AffineFullUnroll.cpp.o -c /home/wenhu/mlir-learning/lib/Transform/Affine/AffineFullUnroll.cpp",
+  "command": "/usr/bin/c++ -DGTEST_HAS_RTTI=0 -I/home/wenhu/mlir-tutorial/install/include -I/home/wenhu/mlir-learning -I/home/wenhu/mlir-learning/build  -fno-rtti  -fno-exceptions -funwind-tables -fno-rtti -std=gnu++17 -o CMakeFiles/obj.AffineFullUnroll.dir/AffineFullUnroll.cpp.o -c /home/wenhu/mlir-learning/lib/Transform/Affine/AffineFullUnroll.cpp",
   "file": "/home/wenhu/mlir-learning/lib/Transform/Affine/AffineFullUnroll.cpp"
 },
 {
+  "directory": "/home/wenhu/mlir-learning/build/lib/Transform/Affine",
+  "command": "/usr/bin/c++ -DGTEST_HAS_RTTI=0 -I/home/wenhu/mlir-tutorial/install/include -I/home/wenhu/mlir-learning -I/home/wenhu/mlir-learning/build  -fno-rtti  -fno-exceptions -funwind-tables -fno-rtti -std=gnu++17 -o CMakeFiles/obj.AffineFullUnroll.dir/AffineFullUnrollPatternRewrite.cpp.o -c /home/wenhu/mlir-learning/lib/Transform/Affine/AffineFullUnrollPatternRewrite.cpp",
+  "file": "/home/wenhu/mlir-learning/lib/Transform/Affine/AffineFullUnrollPatternRewrite.cpp"
+},
+{
+  "directory": "/home/wenhu/mlir-learning/build/lib/Transform/Arith",
+  "command": "/usr/bin/c++  -I/home/wenhu/mlir-tutorial/install/include -I/home/wenhu/mlir-learning -I/home/wenhu/mlir-learning/build  -fno-rtti -std=gnu++17 -o CMakeFiles/MulToAdd.dir/MulToAdd.cpp.o -c /home/wenhu/mlir-learning/lib/Transform/Arith/MulToAdd.cpp",
+  "file": "/home/wenhu/mlir-learning/lib/Transform/Arith/MulToAdd.cpp"
+},
+{
   "directory": "/home/wenhu/mlir-learning/build/tools",
-  "command": "/usr/bin/c++  -I/home/wenhu/mlir-tutorial/install/include -I/home/wenhu/mlir-learning -std=gnu++17 -o CMakeFiles/tutorial-opt.dir/tutorial-opt.cpp.o -c /home/wenhu/mlir-learning/tools/tutorial-opt.cpp",
+  "command": "/usr/bin/c++  -I/home/wenhu/mlir-tutorial/install/include -I/home/wenhu/mlir-learning -I/home/wenhu/mlir-learning/build  -fno-rtti -std=gnu++17 -o CMakeFiles/tutorial-opt.dir/tutorial-opt.cpp.o -c /home/wenhu/mlir-learning/tools/tutorial-opt.cpp",
   "file": "/home/wenhu/mlir-learning/tools/tutorial-opt.cpp"
 }
 ]

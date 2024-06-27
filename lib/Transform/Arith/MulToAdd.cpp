@@ -1,11 +1,14 @@
 #include "lib/Transform/Arith/MulToAdd.h"
 #include "mlir/Dialect/Arith/IR/Arith.h"
 #include "mlir/IR/PatternMatch.h"
-#include "mlir/Transforms/GreedyPatternRewriteDriver.h"
 #include "mlir/Pass/Pass.h"
+#include "mlir/Transforms/GreedyPatternRewriteDriver.h"
 
 namespace mlir {
 namespace tutorial {
+
+#define GEN_PASS_DEF_MULTOADD
+#include "lib/Transform/Arith/Passes.h.inc"
 
 using arith::AddIOp;
 using arith::ConstantOp;
@@ -75,25 +78,26 @@ struct PeelFromMul : public OpRewritePattern<MulIOp> {
         rhsDefiningOp.getLoc(),
         rewriter.getIntegerAttr(rhs.getType(), value - 1));
 
-    MulIOp newMul = rewriter.create<MulIOp>(op.getLoc(),lhs,newConstant);
-    AddIOp newAdd = rewriter.create<AddIOp>(op.getLoc(),newMul,lhs);
+    MulIOp newMul = rewriter.create<MulIOp>(op.getLoc(), lhs, newConstant);
+    AddIOp newAdd = rewriter.create<AddIOp>(op.getLoc(), newMul, lhs);
 
-    rewriter.replaceOp(op,newAdd);
+    rewriter.replaceOp(op, newAdd);
     rewriter.eraseOp(rhsDefiningOp);
 
     return success();
   }
 };
 
-void MulToAddPass::runOnOperation(){
-  mlir::RewritePatternSet patterns(&getContext());
-  patterns.add<PowerOfTwoExpand>(&getContext());
-  patterns.add<PeelFromMul>(&getContext());
-  (void)applyPatternsAndFoldGreedily(getOperation(),std::move(patterns));
-}
+struct MulToAdd : impl::MulToAddBase<MulToAdd> {
+  using MulToAddBase::MulToAddBase;
+
+  void runOnOperation() {
+    mlir::RewritePatternSet patterns(&getContext());
+    patterns.add<PowerOfTwoExpand>(&getContext());
+    patterns.add<PeelFromMul>(&getContext());
+    (void)applyPatternsAndFoldGreedily(getOperation(), std::move(patterns));
+  }
+};
 
 } // namespace tutorial
 } // namespace mlir
-
-
-
