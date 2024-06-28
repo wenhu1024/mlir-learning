@@ -16,6 +16,7 @@ target_link_libraries(
 
     AffineFullUnroll
     MulToAdd
+    MLIRPoly
 
     MLIROptLib
     MLIRPass
