@@ -1,4 +1,4 @@
-// RUN: ../build/bin/tutorial-opt %s --affine-full-unroll-rewrite > %t
+// RUN: tutorial-opt %s --affine-full-unroll-rewrite > %t
 // RUN: FileCheck %s < %t
 
 
