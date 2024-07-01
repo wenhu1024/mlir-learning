@@ -18,13 +18,20 @@ namespace mlir {
 namespace tutorial {
 namespace poly {
 class PolynomialType;
-class PolynomialType : public ::mlir::Type::TypeBase<PolynomialType, ::mlir::Type, ::mlir::TypeStorage> {
+namespace detail {
+struct PolynomialTypeStorage;
+} // namespace detail
+class PolynomialType : public ::mlir::Type::TypeBase<PolynomialType, ::mlir::Type, detail::PolynomialTypeStorage> {
 public:
   using Base::Base;
+  static PolynomialType get(::mlir::MLIRContext *context, int degreeBound);
   static constexpr ::llvm::StringLiteral getMnemonic() {
     return {"poly"};
   }
 
+  static ::mlir::Type parse(::mlir::AsmParser &odsParser);
+  void print(::mlir::AsmPrinter &odsPrinter) const;
+  int getDegreeBound() const;
 };
 } // namespace poly
 } // namespace tutorial
